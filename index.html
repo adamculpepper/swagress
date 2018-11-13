@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Swagress.com</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="/assets/css/index.css" rel="stylesheet"> -->
+	</head>
+	<body>
+
+		<div id="list" class="container">
+			<script id="hr-template" type="text/x-handlebars-template">
+				<div class="card mb-2">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-1">{{cells.ID}}</div>
+							<div class="col-4">{{cells.Name}}</div>
+							<div class="col">{{cells.Faction}}</div>
+							<div class="col"><img width="50" class="img-responsive" src="http://swagress.com/{{cells.PhotoFront}}"></div>
+							<div class="col"><img width="50" class="img-responsive" src="http://swagress.com/{{cells.PhotoBack}}"></div>
+						</div>
+					</div>
+				</div>
+			</script>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/sheetrock.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+	</body>
+</html>
